@@ -1,0 +1,40 @@
+/*
+Theme Name: mee_theme
+Theme URI: https://github.com/joanfornis/mee_theme
+Author: Kimberly García
+Author URI: http://tidythemes.com/
+Description: Based in BlankSlate Theme https://es.wordpress.org/themes/blankslate/
+Version: 2022.2
+Requires at least: 5.0
+Tested up to: 5.9
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: mee_theme
+
+BlankSlate WordPress Theme © 2011-2022 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+*{box-sizing:border-box;font-family:arial;margin:0;}
+.main-header,.content-wrapper,.main-footer{display:flex;justify-content:space-between;padding:1rem}
+.main-header div,.main-footer div,nav,.sidebar{background-color:#eee;padding:1rem}
+.main-header,.main-footer{background-color:#ddd}
+.content-wrapper {width:100%;max-width:1200px;margin:auto;}
+
+.content{flex:75%;padding:1rem}
+.sidebar{flex:25%}
+
+@media (max-width: 768px){
+  .content-wrapper{flex-direction:column}
+  .content{padding:0 0 1rem}
+}
+@media (max-width: 576px){
+  .main-footer{flex-direction:column}
+}
