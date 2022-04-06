@@ -10,7 +10,10 @@ add_theme_support( 'html5', array( 'search-form', 'navigation-widgets' ) );
 add_theme_support( 'woocommerce' );
 global $content_width;
 if ( !isset( $content_width ) ) { $content_width = 1920; }
-register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'blankslate' ) ) );
+register_nav_menus( array( 
+    'main-menu' => esc_html__( 'Main Menu', 'blankslate' ), 
+    'sitemap' => esc_html__( 'SiteMap', 'blankslate' )
+    ));
 }
 add_action( 'admin_notices', 'blankslate_admin_notice' );
 function blankslate_admin_notice() {
