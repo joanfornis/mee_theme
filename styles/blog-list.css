@@ -1,1 +1,33 @@
-.blog-list{padding:.5rem 2rem 0 0;margin:-1rem}.blog-list .col{flex:0 1 50%;padding:.5rem}@media (max-width:768px){.blog-list{padding:0;margin:0 0 2rem}}
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 8px #fff;
+  cursor: grab;
+}
+.card .card-title {
+  color: #3c87cd;
+  font-size: 1rem;
+}
+.card .card-description {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+.blog-list {
+  padding: 0.5rem 2rem 0 0;
+  margin: -1rem;
+}
+.blog-list .col {
+  flex: 0 1 50%;
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .blog-list {
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+}
